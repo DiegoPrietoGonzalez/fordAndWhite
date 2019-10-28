@@ -1,0 +1,15 @@
+/*estilo de la pagina como la decee*/
+
+body{
+    background-color: bisque;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 5cm 5cm auto;
+    grid-template-rows: 2cm 2cm auto;
+
+}
+.salonnes{
+    grid-column: 1/2;
+    grid-row: 2/3; 
+}
