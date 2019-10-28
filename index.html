@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="colegio">
+<head>
+
+ <link rel="stylesheet" type="text/css" href="css/stilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <script src="scrips/app.js"></script> 
+    
+    <title>colegio</title>
+</head>
+
+<body ng-controller="colegioCtrl">
+        <h1 align="center">{{ejemplo}}</h1>
+    <aside id="grid">
+        <button ng-click="EstudiantesMejorProPrimaria()">Estudiante Mejor Promedio</button>
+        <h4 align="center" ng-if="estudianteMejorNota.nombre != undefined">El Mejor Estudiante De Primaria Se Llama:{{estudianteMejorNota.nombre}} y su nota es:{{estudianteMejorNota.nota}}</h4>
+        <button ng-click="salonesdeclases()" class="salonnes">Salones de clases</button>
+        <h4 align="center" ng-if="saloness.nombre != undefined">los Salones son:{{salonesdeclases.nombre}} clases:{{salonesdeclases.salones}}</h4>
+    </aside>
+    
+</body>
+</html>
